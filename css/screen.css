@@ -1,22 +1,47 @@
-
-/*Change the box model*/
-html *{
-    box-sizing: border-box;
-}
-*:before, *:after{
-    box-sizing: border-box;
+h1 {
+     font-size: 150px;
+    background-color:darkturquoise;
+      width: 1000px;    
+    margin:0px;
 }
 
-body{
-  font-size: 24px;  
+.one { 
+    font-size: 50px;
+    width: 1000px;
+    margin:0px;
+    background-color:aqua;
+    
 }
-h1{
-    font-size:
+
+h2 {
+    
+    font-size: 100px;
+    margin: 0px;
+    background-color:azure;
+    width: 1000px;
+   
 }
-p{
-    background-color: aqua; 
-    padding: 16px;
-    border: 1px solid #000000;
-    margin: 30px;
-    width: 500px; 
+
+.two {
+    font-size: 60px;
+    
+    <p> { font-size: 70px;}    
+    
 }
+
+.three {
+    font-size: 60px;
+  right:1000 px;
+    position: relative;
+   
+    
+}
+#four {
+    position: relative;
+    bottom: 270px;
+    left: 450px;
+}
+h3 {font-size: 30px;
+}
+
+<p>
