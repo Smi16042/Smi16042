@@ -63,15 +63,12 @@ h2 {
 
     
 
-.four {
+#four{
     
     font-size: 2em;
     position: relative;
-    bottom: auto;
-    left: auto;
-    margin: 
-    width: auto;
 }
+
 h3 {font-size: 1em;
 }
 
@@ -115,7 +112,7 @@ h3 {font-size: 1em;
     {text-align: center}
     #three
     {text-align: center;}
-    .four 
+    #four 
     {text-align: center;}
     h3 
     {text-align: center;}
