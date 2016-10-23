@@ -18,11 +18,19 @@ th {
 
 
 h1 {
+    
     font-size: 4em;
     background-color:darkturquoise;
+   
+    margin:inherit; 
     width:auto;
-    margin:inherit;
+   
+    @media (min-width:900px)
+    
+        background-color:red; 
 }
+
+
 
 .one { 
     font-size: 2em;
@@ -87,8 +95,7 @@ h3 {font-size: 1em;
 @media (min-width:900px)
 {
     body {font-size:160%;}
-
-
+    
 }
 @media (min-width:1100px)
 {
