@@ -60,13 +60,16 @@ h3 {font-size: 1em;
     position: relative; 
     font-size: 4vw;
 }
-
-@media screen and (min-width:700px){
-     #five{
-         display: inline;
-     }  
-}
-
+    
+    @media screen and (min-width:700px){
+        body{
+            font-size:120;
+        }
+        #five{
+            display:inline;
+        }
+    }
+    
 @media (min-width:900px){
     html{
         background-color:darkcyan;
