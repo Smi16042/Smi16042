@@ -11,7 +11,7 @@ body {
 th, td {
     padding: 15px; 
 }
-}
+
 
 th {
     text-align: left
@@ -26,9 +26,7 @@ h1 {
     margin:inherit; 
     width:auto;
    
-    @media (min-width:900px)
-    
-        
+    @media (min-width:900px)      
 }
 
 
