@@ -191,3 +191,12 @@ footer{
 img {
     flex-wrap: wrap;
 }
+
+#three{
+    display: inherit;
+}
+
+#four{
+    display: inherit;
+}
+
