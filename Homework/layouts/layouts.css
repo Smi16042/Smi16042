@@ -13,6 +13,15 @@ body{
     margin: 0;
     padding: 0;
 }
+.container {
+    display:flex;
+    flex-direction: row; 
+}
+
+#wrapper {
+    display: flex;
+    flex-flow:row wrap;
+}
 
 header {
     position:relative;
@@ -20,12 +29,14 @@ header {
     
 }
 
-main {
-    margin-left: 300px;
-    margin-right: 300px;
+nav {
+    flex-direction: column;
+}
+
+ main {
+   flex-direction: column; 
 }
 
 aside {
-    margin-left: 1200px;
-    
+    flex-direction: column;
 }
