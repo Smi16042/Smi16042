@@ -43,11 +43,11 @@ h2 {
     font-size: 2em;       
 }
 
-#three {
+.three {
     font-size: 2em;
 }
 
-#four{    
+.four{    
     font-size: 2em;
     position: relative;
 }
@@ -55,7 +55,7 @@ h2 {
 h3 {font-size: 1em;
 }
 
-#five{
+.five{
     display: none;
     position: relative; 
     font-size: 4vw;
@@ -140,6 +140,10 @@ nav {
     text-decoration: none;     
 }
 
+p {
+    background-color: none;
+    text-align: center
+}
 
 a:link {
     color: blue; 
@@ -184,19 +188,19 @@ footer{
     background-color: purple;
 }
 
-#five {
-    display: none;
+.five {
+    display: inherit;
 }
 
 img {
     flex-wrap: wrap;
 }
 
-#three{
+.three{
     display: inherit;
 }
 
-#four{
+.four{
     display: inherit;
 }
 

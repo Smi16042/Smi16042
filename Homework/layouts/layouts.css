@@ -8,27 +8,37 @@ html *{
     
 }
 
+
+
 body{
     font: 20px "times new roman", times, serif;
     margin: 0;
     padding: 0;
 }
-.container {
-    display:flex;
-    flex-direction: row; 
-}
 
 #wrapper {
     display: flex;
-    flex-flow:row wrap;
+    flex-direction: column;
 }
-
-header {
-    position:relative;
-    left: 550px;
     
+#everything{
+    display: flex;
+    flex-flow: row;
 }
 
+nav{
+    flex: 1 25%;
+}
+
+aside{
+    flex: 1 25%;
+}
+
+main {
+    flex: 1 50%;
+}
+
+/*
 nav {
     flex-direction: column;
 }
