@@ -108,14 +108,14 @@ h3 {font-size: 1em;
 }
 
 @media (min-width:850px){
-html {font-size; 170%;}
+html {font-size: 170%;}
     .five {display: none;}
     .six {display: inline;}
     .seven {display: none;}
 }
 
-@media (min-width:1000px)
-{html{font-size:200%;}
+@media (min-width:1000px){
+    html{font-size:200%;}
     .five {display:none;}
     .six {display: none;}
     .seven {display: inline;}
