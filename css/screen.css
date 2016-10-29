@@ -101,19 +101,27 @@ h3 {font-size: 1em;
     
 */
 @media (min-width:700px){
-html {font-size: 140%;}
+    html {font-size: 140%;}
+    .five {display: inline;}
+    .six {display:none;}
+    .seven {display: none;}
+    background-color: red;
 }
 
-@media (min-width:800px){
-html {font-size; 160%;}
-}
-
-@media (min-width:900px) {
-html {font-size:180;}
+@media (min-width:850px){
+html {font-size; 170%;}
+    .five {display: none;}
+    .six {display: inline;}
+    .seven {display: none;}
+    background-color: purple; 
 }
 
 @media (min-width:1000px)
 {html{font-size:200%;}
+    .five {display:none;}
+    .six {display: none;}
+    .seven {display: inline;}
+    background-color: orange; 
 }
 
 h2, h3 {
@@ -209,4 +217,8 @@ img {
 
 .four{
     display: inherit;
+}
+
+img{
+    display: none @media 
 }
