@@ -137,7 +137,7 @@ body {
 }
 
 header {
-    background-color:blue;
+    background-color:beige;
     flex-grow:inherit;
 }
 
@@ -146,7 +146,7 @@ nav {
     flex-flow: row;
     text-align: center;
     font-size: 2em; 
-    background-color: red;
+    background-color: burlywood;
     justify-content: space-around;
     text-decoration: none;     
 }
@@ -191,11 +191,11 @@ a:active {
     text-decoration: underline;
 }
 main{
-    background-color: green;
+    background-color: beige;
 }
 
 footer{
-    background-color: purple;
+    background-color: beige;
 }
 
 .five {
