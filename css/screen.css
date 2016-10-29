@@ -204,3 +204,9 @@ img {
     display: inherit;
 }
 
+.five{
+    border: 1px solid black;
+    font-size: 2em;
+    display:flex;
+    text-align: justify;
+}
