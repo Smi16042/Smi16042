@@ -116,10 +116,9 @@ html {font-size: 170%;}
 
 @media (min-width:1000px){
     html{font-size:200%;}
-    .five {display:none;}
-    .six {display: none;}
-    .seven {display: inline;}
+    
 }
+
 
 h2, h3 {
     font-size: 2em;
@@ -152,7 +151,8 @@ nav {
 }
 
 p {
-    text-align: center
+    text-align: center;
+    font-size: 1.5em;
 }
 
 a:link {
@@ -209,6 +209,7 @@ img {
 .three{
     display: inherit;
 }
+
 
 .four{
     display: inherit;
