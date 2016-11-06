@@ -1,11 +1,11 @@
 $(function(){
-    $("#page-header").load("mod.html/modules/modules.js");\
+    $("#page-header").load("header.html);\
     });
 
 $(function(){
-    $("#pagenav") .load("mod.html/modules/modules.js");\
+    $("#pagenav") .load("modules.js");\
      });
     
 $(function(){
-    $("#page-footer").load("mod.html/modules/modules.js");\
+    $("#page-footer").load("modules.js");\
 });
