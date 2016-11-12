@@ -25,27 +25,28 @@
 
 			<h1 class="main-title">Grand Canyon National Park</h1>
 
-			<figure class="featured-image">
-				<img src="../responsive_media/images/cactus.small.jpg" scrnset="../responsive_media/images/cactus.medium.jpg 1000w, ../responsive_media/images/cactus.large.jpg 2000w" alt="cactus">
-                
+			<figure class="featured-image">                
                 <picture>
                     
+                    <source media="(max-width:41.67em)"
+                            srcset="../responsive_media/images/cactus.small.jpg">
                     <source
-                            srcset="../responsive_media/images/cactus.small 1x, media">
-                    <source
-                            media ="(min-width:41.67em)"
-                            srcset="../responsive_media/images/cactus.medium 1x, media">
-                    <source
-                            media ="(min-width:66.7em)" srcset="../responsive_media/images/cactus.large 1x, media">
-                </picture>
+                            media ="(max-width:66.7em)"
+                            srcset="../responsive_media/images/cactus.medium.jpg">
+                    <source 
+                                    srcset= "../responsive_media/images/cactus.jpg"
+                            alt ="cactus">
+                    <img
+                         src="../responsive_media/images/cactus.medium.jpg"
+                         alt="cactus two">
+                    </picture>
+                    
+                                    
+               
                 
                 
                 
-                
-                <img src="../responsive_media/images/cactus.large.jpg" srcset="../responsive_media/images/cactus.large.jpg 1024w, ../responsive_media/images/cactus.medium.jpg 640w, ../responsive_media/images/cactus.small.jpg 320w"
-                     sizes ="100vw"
-                     alt="cactus"
-                     >
+               
                 
                 
 
