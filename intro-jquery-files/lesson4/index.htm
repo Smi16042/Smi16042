@@ -4,21 +4,23 @@
 	<meta charset="UTF-8">
 	<title>Alcove Digital Systems</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/cdn.txt"></script>
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>    
 	<script>
 	$(function(){
 	
-           var nameVal = $('input[name="nameVal"]');
-        
-            function FillEmpty(){
-                if(nameVal.val()==''){
-                    nameVal.val('John Doe'):
-                }
-            }
-    
-        $('#ReqAQuoteBtn').click( FillEmpty);
-        
+            // jQuery code goes here
+           toggleStyle = function() {
+               
+               var inputFields = $('input[type="text"]');
+               if( inputFields.css('background-color') === 'rgb(255, 0, 0)'){
+                   inputFields.css('background-color', 'rgb(225, 225, 225)');
+               } else {
+                   inputFields.css('background-color','rgb(225,0,0)');
+               }
+           }
+               $('#ReqAQuoteBtn').click( toggleStyle);
 	})
+    
 	</script>
 </head>
 <body>
