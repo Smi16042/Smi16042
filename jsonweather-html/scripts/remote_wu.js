@@ -22,22 +22,47 @@ $(function () {
 
   // Get the data from the wunderground API
   function getData(lat, long){
-    $.ajax({
-
-
-
-
-
-
-
-      $("#cover").fadeOut(250);
-    }
-           });
-
+         
+        $.ajax({
+              
+              url : "http://api.wunderground.com/api/0d30113166f2b59a/geolookup/conditions/q/" + lat + ',' + long + ".json",
+              dataType : "jsonp",
+              success : function(parsed_json) {
+              var location = parsed_json['location']['city'];
+              var temp_f = parsed_json['current_observation']['temp_f'];
+              var city = parsed_json['location']['city'];
+              var state = parsed_json ['location']['state'];
+              var sum = parsed_json ['current_observation']['weather'];
+              var addone = parsed_json ['current_observation']['wind_gust_mph'];
+              var addtwo = parsed_json ['current_observation']['solarradiation'];
+              var addthree = parsed_json ['current_observation']['epoch'];
+            
+              alert("Current temperature in " + location + " is: " + temp_f +" in " + city );
+                  
+              $("#cityDisplay").html(city + ", "  + state );
+              $("title").html(city + ", "  + state);
+              $("#currentTemp").html(Math.round(temp_f) + "&#176" + "F");
+              $("#summary").html (sum);
+              $("#add1").html(addone);
+              $("#add2").html(addtwo);
+              $("#add3").html(addthree);
+                  
+              
   }
+  });
+      
+      $("#cover").fadeOut(250);
+  }
+});
+
+
+        
+      $("#cover").fadeOut(250);
+    
+           
 
   // A function for changing a string to TitleCase
   function toTitleCase(str){
     return str.replace(/\w+/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
   }
-});
+
