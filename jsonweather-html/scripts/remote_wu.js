@@ -43,7 +43,7 @@ $(function () {
               $("title").html(city + ", "  + state);
               $("#currentTemp").html(Math.round(temp_f) + "&#176" + "F");
              
-              $("#summary").html('wind gust mph + addone')
+              $("#summary").html(sum);
               $("#add1").html("Local Time: " + addone);
               $("#add2").html("Current Weather: " + addtwo);
               $("#add3").html("Precipitation Today in Inches: " + addthree); 
