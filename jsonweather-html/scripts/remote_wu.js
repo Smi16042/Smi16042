@@ -33,19 +33,20 @@ $(function () {
               var city = parsed_json['location']['city'];
               var state = parsed_json ['location']['state'];
               var sum = parsed_json ['current_observation']['weather'];
-              var addone = parsed_json ['current_observation']['wind_gust_mph'];
-              var addtwo = parsed_json ['current_observation']['solarradiation'];
-              var addthree = parsed_json ['current_observation']['epoch'];
+              var addone = parsed_json ['current_observation']['local_time_rfc182'];
+              var addtwo = parsed_json ['current_observation']['icon'];
+              var addthree = parsed_json ['current_observation']['precip_today_in'];
             
               alert("Current temperature in " + location + " is: " + temp_f +" in " + city );
                   
               $("#cityDisplay").html(city + ", "  + state );
               $("title").html(city + ", "  + state);
               $("#currentTemp").html(Math.round(temp_f) + "&#176" + "F");
-              $("#summary").html (sum);
-              $("#add1").html(addone);
-              $("#add2").html(addtwo);
-              $("#add3").html(addthree);
+             
+              $("#summary").html('wind gust mph + addone')
+              $("#add1").html("Local Time: " + addone);
+              $("#add2").html("Current Weather: " + addtwo);
+              $("#add3").html("Precipitation Today in Inches: " + addthree); 
                   
               
   }
