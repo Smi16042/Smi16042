@@ -3,9 +3,9 @@ $(function(){
     });
 
 $(function(){
-    $("#pagenav") .load("modules.js");\
+    $("#pagenav") .load("nav.html");\
      });
     
 $(function(){
-    $("#page-footer").load("modules.js");\
+    $("#page-footer").load("footer.html");\
 });
