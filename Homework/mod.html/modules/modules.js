@@ -9,3 +9,5 @@ $(function(){
 $(function(){
     $("#page-footer").load("modules.js");\
 });
+
+<p> work </p> 
