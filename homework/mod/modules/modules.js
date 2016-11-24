@@ -1,11 +1,5 @@
 $(function(){
-    $("#page-header").load("header.html");\
-    });
-
-$(function(){
-    $("#pagenav") .load("nav.html");\
-     });
-    
-$(function(){
-    $("#page-footer").load("footer.html");\
+    $("#page-header").load("header.html");   
+    $("#pagenav").load("nav.html");
+    $("#page-footer").load("footer.html");
 });
