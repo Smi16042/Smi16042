@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> home page | austinsdomain.net</title>
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+
+
+
+<main> window.location.replace("https://smi16042.github.io/homework/weather-websites/franklin-web/index.html"); </main>
+</head>
+</html>
