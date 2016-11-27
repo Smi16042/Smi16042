@@ -33,7 +33,7 @@ $(function () {
               var city = parsed_json['location']['city'];
               var state = parsed_json ['location']['state'];
               var sum = parsed_json ['current_observation']['weather'];
-              var addone = parsed_json ['current_observation']['local_time_rfc182'];
+              var addone = parsed_json ['current_observation']['wind_nch'];
               var addtwo = parsed_json ['current_observation']['icon'];
               var addthree = parsed_json ['current_observation']['precip_today_in'];
             
@@ -44,7 +44,7 @@ $(function () {
               $("#currentTemp").html(Math.round(temp_f) + "&#176" + "F");
              
               $("#summary").html(sum);
-              $("#add1").html("Local Time: " + addone);
+              $("#add1").html("Wind Speed: " + addone);
               $("#add2").html("Current Weather: " + addtwo);
               $("#add3").html("Precipitation Today in Inches: " + addthree); 
                   
