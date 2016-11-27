@@ -37,7 +37,7 @@ $(function () {
               var addtwo = parsed_json ['current_observation']['icon'];
               var addthree = parsed_json ['current_observation']['precip_today_in'];
             
-              alert("Current temperature in " + location + " is: " + temp_f +" in " + city );
+              
                   
               $("#cityDisplay").html(city + ", "  + state );
               $("title").html(city + ", "  + state);
