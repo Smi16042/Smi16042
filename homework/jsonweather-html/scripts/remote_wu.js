@@ -33,7 +33,7 @@ $(function () {
               var city = parsed_json['location']['city'];
               var state = parsed_json ['location']['state'];
               var sum = parsed_json ['current_observation']['weather'];
-              var addone = parsed_json ['current_observation']['wind_nch'];
+              var addone = parsed_json ['current_observation']['wind_mph'];
               var addtwo = parsed_json ['current_observation']['icon'];
               var addthree = parsed_json ['current_observation']['precip_today_in'];
             
