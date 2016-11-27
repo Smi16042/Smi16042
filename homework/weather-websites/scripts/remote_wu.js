@@ -25,7 +25,7 @@ $(function () {
          
         $.ajax({
               
-              url : "http://api.wunderground.com/api/0d30113166f2b59a/geolookup/conditions/q/" + lat + ',' + long + ".json",
+              url : "https://api.wunderground.com/api/0d30113166f2b59a/geolookup/conditions/q/" + lat + ',' + long + ".json",
               dataType : "jsonp",
               success : function(parsed_json) {
               var location = parsed_json['location']['city'];
@@ -33,18 +33,18 @@ $(function () {
               var city = parsed_json['location']['city'];
               var state = parsed_json ['location']['state'];
               var sum = parsed_json ['current_observation']['weather'];
-              var addone = parsed_json ['current_observation']['local_time_rfc182'];
+              var addone = parsed_json ['current_observation']['wind_mph'];
               var addtwo = parsed_json ['current_observation']['icon'];
               var addthree = parsed_json ['current_observation']['precip_today_in'];
             
-              alert("Current temperature in " + location + " is: " + temp_f +" in " + city );
+              
                   
               $("#cityDisplay").html(city + ", "  + state );
               $("title").html(city + ", "  + state);
               $("#currentTemp").html(Math.round(temp_f) + "&#176" + "F");
              
               $("#summary").html(sum);
-              $("#add1").html("Local Time: " + addone);
+              $("#add1").html("Wind Speed: " + addone + "mph");
               $("#add2").html("Current Weather: " + addtwo);
               $("#add3").html("Precipitation Today in Inches: " + addthree); 
                   
@@ -66,3 +66,4 @@ $(function () {
   function toTitleCase(str){
     return str.replace(/\w+/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
   }
+
