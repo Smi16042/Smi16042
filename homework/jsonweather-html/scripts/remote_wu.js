@@ -44,7 +44,7 @@ $(function () {
               $("#currentTemp").html(Math.round(temp_f) + "&#176" + "F");
              
               $("#summary").html(sum);
-              $("#add1").html("Wind Speed: " + addone);
+              $("#add1").html("Wind Speed: " + addone + "mph");
               $("#add2").html("Current Weather: " + addtwo);
               $("#add3").html("Precipitation Today in Inches: " + addthree); 
                   
