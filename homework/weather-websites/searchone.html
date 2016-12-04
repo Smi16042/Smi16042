@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    
+   <!-- // worked with
+    1. Nichole Bunch
+    2. Kaoi Doxxie
+    3. Austin Smith
+    4. Jossten Childs
+    5. Wyatt Larson //-->
+
+    
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Home</title>
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+ 
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="page-header"></header>
+    <nav id="page-nav">
+        
+      </nav>
+    <main id="page-main">
+    
+        
+        <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+  <input type="search" name="query" id="query">
+  <input type="submit" name="submit" value="Search" id="send">
+</form>
+        
+        <section id="searchResults">
+             
+  <h2>Search Results</h2>
+</section>
+         <section id="weather-section">
+         
+            <p id ="cityDisplay"> </p>
+            <p id ="title">  </p>
+            <p id ="currentTemp"> </p>
+            <p id ="summary">  </p>
+            <p id ="cover"> </p>
+             <p id ="add1"> </p>
+             <p id ="add2"></p>
+             
+        </section> 
+        
+     
+    </main>
+    <footer id="page-footer">
+      <div id="footer-content"></div>
+      <small>Last updated: 11 / 30 / 2016 </small>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"> </script>
+    <script src="/weather-websites/searchone.js"></script>
+      
+  </div>
+</body>
+
+</html>
