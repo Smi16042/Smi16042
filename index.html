@@ -1,90 +1,47 @@
-$('#query').keyup(function(){
-   var value = $('#query').val();
-   var rExp = new RegExp(value, "i");
-        $.getJSON("http://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
-                console.log(data);
-                $('#query').keyup(function(){
-                    var value = $('#query').val();
-                    var rExp = new RegExp(value, "i");
-                $.getJSON("http://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
-                    var output ='<ol>';
-                        $.each(data.RESULTS, function(key, val) {
-                        if (val.name.search(rExp) != -1) {
-        output += '<li>';
-        output += '<a href="http://www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
-        output += '</li>';
-      }
-    }); // end each
-    output += '</ol>';
-    $("#searchResults").html(output); // send results to the page
-  }); // end getJSON
-}); // end onkeyup
-
-    output += '</ol>';
-    $("#searchResults").html(output); // send results to the page
-  }); // end getJSON
-}); // end onkeyup
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> home page | austinsdomain.net</title>
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+</head>
+    <body>
+        <header>
+            <h1> Austins Domain.net <br> Home Page </h1></header>
+    <nav>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java Script</li>
+            <Li>Random Technical Meltdowns </Li>
+        </ul>
+    </nav>
+        <main>
+        <h2> Homework Links</h2>
+         <ul>      
+            <li> <a href = "../../misc/practice%20(4).html" title="practice file"> Practice File </a> </li> 
+            <li> <a href = "../../misc/visitor_analysis_persona.html"> Visitor Analysis Persona</a></li>
+            <li> <a href = "https://eleets.github.io"> Proximity Group project </a></li>
+            <li> <a href = "../../misc/planingpage.html"> Planing Page</a></li>
+            <li> <a href = "franklinwebpage.html"> Franklin Mobile Weather</a></li>
+            <li> <a href = "../../misc/presentationwebsite.html"> Presentation Page</a></li>
+            <li> <a href = "../../responsive_media/responsiveimagesindex.html">Responsive Media Page</a></li>
+            <li> <a href = "../../intro-jquery-files/lesson4/index.htm">Lesson Four</a></li>
+            <li> <a href = "../../jsonweather-html/index.html"> Seed Weather</a></li>
+             <li> <a href = "../../weather-websites/index.html"> Current Weather Conditions</a></li>
+			<li> <a href ="../searchone.html" title ="searchbar">Searchbar </a>    </li>    
+		</ul>
+        <div id="wrapper">
+  <footer>
+        <small> 
+            "I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me"~Bene Gesserit
+            <br> 
+            Last Updated: November 22nd 2016
+        </small>
+        </footer>
         
-
-
-// A function for changing a string to TitleCase
-  function toTitleCase(str){
-    return str.replace(/\w+/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-  }
-
-// Get weather data from wunderground.com
-function getData(input) {
-  // Get the data from the wunderground API
-  $.ajax({
-    url: "http://api.wunderground.com/api/0d30113166f2b59a/geolookup/conditions/q/"
-    + input + ".json"
-    , dataType: "jsonp"
-    , success: function (data) {
-      console.log(data);
-      var location = data.location.city + ', ' + data.location.state;
-      var temp_f = data.current_observation.temp_f;
-      console.log('Location is: ' + location);
-      console.log('Temp is: ' + temp_f);
-      $("#cityDisplay").text(location);
-      $("title").html(location + " | Weather Center");
-      $("#currentTemp").html(Math.round(temp_f) + '°');
-      $("#summary").text(toTitleCase(data.current_observation.icon));
-      $("#cover").fadeOut(250);
-    }
-  });
-}
-
-
-// Intercept the menu link clicks
-$("#page-nav").on("click", "a", function (evt) {
-  evt.preventDefault();
-  // With the text value get the needed value from the weather.json file
-  var jsonCity = $(this).text(); // Franklin, etc...
-  console.log(jsonCity);
-  $.ajax({
-    url: "scripts/weather.json"
-    , dataType: "json"
-    , success: function (data) {
-      console.log(data);
-      console.log(data[jsonCity]);
-      var zip = data[jsonCity].zip;
-      console.log(zip);
-      getData(zip);
-    }
-  });
-});
-      
-      $("#cover").fadeOut(250);
-  });
-
-
-
-        
-      $("#cover").fadeOut(250);
-    
-           
-
-  // A function for changing a string to TitleCase
-  function toTitleCase(str){
-    return str.replace(/\w+/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-  }
+            </div>
+        </main>
+    </body>
+</html>
