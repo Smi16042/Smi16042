@@ -71,7 +71,7 @@ $("#searchResults").on("click", "a", function (evt) {
   var jsonCity = $(this).text(); // Franklin, etc...
   console.log(jsonCity);
   $.ajax({
-    url: "http://api.wunderground.com/api/0d30113166f2b59a/geolookup/conditions/q/" + jsonCity + ".json"
+    url: "https://api.wunderground.com/api/0d30113166f2b59a/geolookup/conditions/q/" + jsonCity + ".json"
     , dataType: "jsonp"
     , success: function (data) {
       console.log(data);
