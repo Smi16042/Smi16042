@@ -2,12 +2,12 @@ $('#query').keyup(function(){
 var value = $('#query').val();
 var rExp = new RegExp(value, "i");
 
-$.getJSON("http://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
+$.getJSON("https://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
 var output ='<ol id = "ol">';
 $.each(data.RESULTS, function(key, val) {
 if (val.name.search(rExp) != -1) {
 output += '<li>';
-output += '<a href="http://www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
+output += '<a href="https://www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
 output += '</li>';
 }
 }); // end each
