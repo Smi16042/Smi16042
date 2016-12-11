@@ -108,7 +108,7 @@ html {
     display:block;
     margin:auto;
     max-width: 100%;
-    
+    background-color: darkgray;
 }
 .footer {
     background-color:black;
