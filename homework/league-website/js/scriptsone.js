@@ -1,5 +1,5 @@
 
-$.getJSON( "/league-website/js/scriptsone.json", function( data ) {
+$.getJSON( "../js/scriptsone.json", function( data ) {
   var items = [];
   $.each( data, function( key, val ){
       console.log(data);
