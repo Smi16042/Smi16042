@@ -2,7 +2,8 @@
     $.getJSON( "../js/script.json", function( data ) {
   var items = []; 
   $.each( data, function( key, val ) {
-      items.push( "<img class='json_images' alt='" + key + "'src='" + val + "'/>");
+      console.log(data); 
+      items.push( "<img class=' ,' alt='" + key + "'src='" + val + "'/>");
   });
  
   $( "<div/>", {
