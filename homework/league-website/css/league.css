@@ -121,6 +121,7 @@ html {
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
+    
 }
 @media only screen and (min-width: 600px) {
     
@@ -137,6 +138,12 @@ html {
     .col-m-10 {width: 83.33%;}
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
+    
+    .leaguevid{
+        width:100%;
+        height:20em;
+        
+    }
     
     
 
@@ -156,5 +163,11 @@ html {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+     
+    .leaguevid{
+        width:100%;
+        height:20em;
+        
+    }
 
 }

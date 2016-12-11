@@ -1,20 +1,13 @@
-$(document).ready(function(){
-$.getJSON( "../js/scriptone.json", function (data){
-    console.log(data);
-        $(".five").text(data.lolking);    
-});    
-});
 
-
- $.getJSON( "../js/scriptone.json", function( data ) {
-  var items = []; 
-  $.each( data, function( key, val ) {
-      items.push( "'text' alt='" + key + "'src='" + val + "'/>");
+$.getJSON( "/league-website/js/scriptsone.json", function( data ) {
+  var items = [];
+  $.each( data, function( key, val ){
+      console.log(data);
+    items.push( "<li id='" + key + "'>" + val + "</li>" );
   });
  
-  $( "<div/>", {
+  $( "<ul/>", {
     "class": "my-new-list",
     html: items.join( "" )
-  }).appendTo( "div.five" );
+  }).appendTo( "div.weblink" );
 });
-
