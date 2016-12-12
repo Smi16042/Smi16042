@@ -1,4 +1,4 @@
-   $.getJSON( "../js/rooster.json", function( data ) {
+   $.getJSON( "../js/roster.json", function( data ) {
   var items = []; 
   $.each( data, function( key, val ) {
       console.log(data); 
@@ -8,5 +8,6 @@
   $( "<div/>", {
     "class": "my-new-list",
     html: items.join( "" )
-  }).appendTo( "div.rooster" );
+  }).appendTo( "div.roster" );
 });
+    
