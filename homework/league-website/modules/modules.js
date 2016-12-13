@@ -1,5 +1,6 @@
 $(function(){
-    $("#myheader").load("../modules/header.html");   
-    $("#mynav").load("../modules/nav.html");
-    $("#myfooter").load("../modules/footer.html");
+    $("#myheader").load("../smi16042/homework/league-website/modules/header.html");   
+    $("#mynav").load("../smi16042/homework/league-website/modules/nav.html");
+    $("#myfooter").load("../smi16042/homework/league-website/modules/footer.html");
 });
+
